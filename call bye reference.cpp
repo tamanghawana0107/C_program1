@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
-int change(int *a);
+void change(int *a);
 int main()
 {
 	int a=10;
@@ -9,7 +9,7 @@ int main()
 	printf("After calling function::a=%d\n",a);
 	getch();
 }
-int change(int *a)
+void change(int *a)
 {
 	*a=*a+10;
 	printf("Value of a inside function change is ::%d\n",*a);
